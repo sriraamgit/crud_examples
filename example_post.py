@@ -18,7 +18,7 @@ def returnOne(name):
 @app.route('/lang', methods = ["POST"])
 def addOne():
     language = {'name':request.json['name']}
-    languages.append(languages)
+    languages.append(language)
     return jsonify({'languages':languages})
 if __name__ =='__main__':
     app.run(debug=True,port=8080)
