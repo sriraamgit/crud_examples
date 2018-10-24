@@ -18,7 +18,7 @@ def returnOne(name):
 @app.route('/lang', methods=["POST"])
 def addOne():
     language = {'name':request.json['name']}
-    languages.append(languages)
+    languages.append(language)
     return jsonify({'languages':languages})
 @app.route('/lang/<string:name>', methods = ['PUT'])
 def editOne(name):
